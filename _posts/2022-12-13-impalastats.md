@@ -19,12 +19,12 @@ last_modifed_at: 2022-12-13
 # 4. ALTER
 ## 1) row count 삽입
 
-```
+```SQL
 alter table <TABLE_NAME> set tblproperties('numRows'=<rowcount>, 'STATS_GENERATED_VIA_STATS_TASK'='true');
 ```
 ## 2) column stats 삽입
 
-```
+```SQL
 alter table <TABLE_NAME> set set column stats <columnname> ('numDVs'='<DV>', 'numNulls'='<numN>', 'maxsize'='<Max_size>, 'avgsize'='<Avg_size>');
 ```
 * column type에 따라서 maxsize, avgsize 는 update 할 수 없음(고정값)
