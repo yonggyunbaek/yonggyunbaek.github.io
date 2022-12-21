@@ -3,7 +3,7 @@ title: "YARN scheduler (추가 예정)"
 excerpt: "YARN 자원할당"
 
 categories: [cloudera]
-tag: [yarn]
+tag: [yarn,yarn-queue-manager]
 
 toc: true
 toc_sticky: true
