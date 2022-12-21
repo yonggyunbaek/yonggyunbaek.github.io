@@ -13,16 +13,16 @@ last_modifed_at: 2022-12-13
 ---
 
 
-# 1. compute stats
-# 2. compute incremental stats
-# 3. sampling
-# 4. ALTER
-## 1) row count 삽입
+## 1. compute stats
+## 2. compute incremental stats
+## 3. sampling
+## 4. ALTER
+### 1) row count 삽입
 
 ```SQL
 alter table <TABLE_NAME> set tblproperties('numRows'=<rowcount>, 'STATS_GENERATED_VIA_STATS_TASK'='true');
 ```
-## 2) column stats 삽입
+### 2) column stats 삽입
 
 ```SQL
 alter table <TABLE_NAME> set set column stats <columnname> ('numDVs'='<DV>', 'numNulls'='<numN>', 'maxsize'='<Max_size>, 'avgsize'='<Avg_size>');
