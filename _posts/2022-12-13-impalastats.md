@@ -9,10 +9,10 @@ toc: true
 toc_sticky: true
 
 date: 2022-12-13
-last_modifed_at: 2022-12-13
+last_modifed_at: 2023-01-02
 ---
 
-**테이블 사이즈가 큰지 작은지, distinct 값들이 많은지 적은지에 대한 정보가 있다면 join 쿼리나 insert 작업을 적절하게 구조화하고 병렬화 할 수 있다.**
+**impala는 테이블 사이즈가 큰지 작은지, distinct 값들이 많은지 적은지에 대한 정보가 있다면 join 쿼리나 insert 작업을 적절하게 구조화하고 병렬화 할 수 있다.**
 
 ## 1. compute stats 
 ```SQL
