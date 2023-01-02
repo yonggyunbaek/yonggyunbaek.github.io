@@ -36,7 +36,8 @@ COMPUTE INCREMENTAL STATS [db_name.]table_name [PARTITION (partition_spec)]
 ### 2) sampling (문서만 확인 - test 필요)
 * 설정 enable 필요함   
 config 변경 --enable_stats_extrapolation   또는   
-특정 테이블만 설정   
+특정 테이블만 설정  
+ 
 * * *
 ```SQL 
 ALTER TABLE mytable test_table SET TBLPROPERTIES("impala.enable.stats.extrapolation"="true")
