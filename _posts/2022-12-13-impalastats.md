@@ -37,7 +37,7 @@ COMPUTE INCREMENTAL STATS [db_name.]table_name [PARTITION (partition_spec)]
 * 설정 enable 필요함   
 config 변경 --enable_stats_extrapolation   또는   
 특정 테이블만 설정  
- 
+
 * * *
 ```SQL 
 ALTER TABLE mytable test_table SET TBLPROPERTIES("impala.enable.stats.extrapolation"="true")
@@ -48,19 +48,19 @@ COMPUTE STATS [db_name.]table_name  [ ( column_list ) ] [TABLESAMPLE SYSTEM(perc
 ```
 * * *
 ## 2. ALTER 
-### 1) row count 삽입
+### 1) row count update
 * * *
 ```SQL
 alter table <TABLE_NAME> set tblproperties('numRows'=<rowcount>, 'STATS_GENERATED_VIA_STATS_TASK'='true');
 ```
 * * *
-### 2) column stats 삽입
+### 2) column stats update
 * * *
 ```SQL
 alter table <TABLE_NAME> set set column stats <columnname> ('numDVs'='<DV>', 'numNulls'='<numN>', 'maxsize'='<Max_size>, 'avgsize'='<Avg_size>');
 ```
 * * *
-* column type에 따라서 maxsize, avgsize 는 update 할 수 없음(고정값)
+* <font color='LightCoral'> column type에 따라서 maxsize, avgsize 는 update 할 수 없다(고정값) </font>
 
 ## 3. 통계정보 확인
 * * *
