@@ -59,7 +59,8 @@ yum --nogpgcheck localinstall ClouderaImpalaODBC-2.6.11.1011-1.x86_64.rpm
 pip3 install pyodbc
 ```
 
-* test.py 커넥션 테스트
+* test.py 커넥션 테스트  
+
 ```python
 # hive ODBC
 import pyodbc
