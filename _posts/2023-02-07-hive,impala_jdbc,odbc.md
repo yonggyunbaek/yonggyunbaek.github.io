@@ -53,11 +53,12 @@ conn.close()​
 yum --nogpgcheck localinstall ClouderaHiveODBC-2.6.13.1013-1.x86_64.rpm
 yum --nogpgcheck localinstall ClouderaImpalaODBC-2.6.11.1011-1.x86_64.rpm
 ```
-* * *
+
 * pyodbc 설치
 ```
 pip3 install pyodbc
 ```
+
 * test.py 커넥션 테스트
 ```python
 # hive ODBC
@@ -73,7 +74,7 @@ print(crsr.fetchall())
 $ python3 test.py
 [('ranger_atlas_test', ), ('ranger_atlas_test_2', )]
 ```
-* * *
+  
 ```python
 # impala ODBC
 import pyodbc
