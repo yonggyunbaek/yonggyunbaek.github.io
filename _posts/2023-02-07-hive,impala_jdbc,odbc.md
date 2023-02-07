@@ -15,10 +15,10 @@ last_modifed_at: 2023-02-07
 
 
 ## 1. cloudera hive,impala JDBC,ODBC 다운로드
- https://www.cloudera.com/downloads/connectors/impala/jdbc/2-6-29.html.html
- https://www.cloudera.com/downloads/connectors/impala/odbc/2-6-17.html
- https://www.cloudera.com/downloads/connectors/hive/jdbc/2-6-21.html
- https://www.cloudera.com/downloads/connectors/hive/odbc/2-6-13.html
+ https://www.cloudera.com/downloads/connectors/impala/jdbc/2-6-29.html.html  
+ https://www.cloudera.com/downloads/connectors/impala/odbc/2-6-17.html  
+ https://www.cloudera.com/downloads/connectors/hive/jdbc/2-6-21.html  
+ https://www.cloudera.com/downloads/connectors/hive/odbc/2-6-13.html  
 
 * hive, impala 서비스 ldap 설정 상태
 
