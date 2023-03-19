@@ -15,7 +15,7 @@ last_modifed_at: 2023-03-19
 **metastore 가 mariadb로 설치된 상태**
 * * *
 
-## 1. <db_name> | <tbl_name> 형태로 추출
+## 1. <db_name> <tbl_name> 형태로 추출
 ```SQL
 select name AS db_name,tbl_name FROM TBLS INNER JOIN DBS ON TBLS.DB_ID = DBS.DB_ID WHERE DBS.name='default'
 ```
