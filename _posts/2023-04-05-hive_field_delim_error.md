@@ -11,7 +11,8 @@ toc_sticky: true
 date: 2023-04-05
 last_modifed_at: 2023-04-05
 ---
-작업배경   
+
+## 작업배경   
 * 테이블 migration 진행   
 * 기존 클러스터에서 show create 이용해서 ddl 추출 후 신규 클러스터에서 실행
 * Error: Error while compiling statement: FAILED: ParseException line 8:1 cannot recognize input near '',\n'' 'serialization' '.' in table properties list (state=42000,code=40000)
@@ -42,12 +43,12 @@ TBLPROPERTIES (
 
 ## 2. 실제 데이터 구분자 확인
 ```
-a1
-b2
-c3
+a&#7;1
+b&#7;2
+c&#7;3
 ```
 
-## 3. 구분자 에 대한 정보 확인
+## 3. 구분자 &#7;에 대한 정보 확인
 
 참고: https://www.fileformat.info/info/unicode/char/0007/index.htm   
 C/C++/Java source code	"\u0007"   
@@ -136,7 +137,7 @@ CREATE EXTERNAL TABLE `default`.`customers_4`(
 ROW FORMAT SERDE
 'org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe'
 WITH SERDEPROPERTIES (
-'field.delim'='',
+'field.delim'='&#7;',
 'serialization.format'='\n')
 STORED AS INPUTFORMAT
 'org.apache.hadoop.mapred.TextInputFormat'
