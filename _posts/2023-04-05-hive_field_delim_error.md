@@ -40,7 +40,7 @@ TBLPROPERTIES (
   'external.table.purge'='true',
   'transient_lastDdlTime'='1680698916');
 ```
-
+ 
 ## 2. 실제 데이터 구분자 확인
 ```
 a&#7;1
