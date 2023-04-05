@@ -48,7 +48,7 @@ b&#7;2
 c&#7;3
 ```
 
-## 3. 구분자 &#7;에 대한 정보 확인
+## 3. 구분자에 대한 정보 확인
 
 참고: https://www.fileformat.info/info/unicode/char/0007/index.htm   
 C/C++/Java source code	"\u0007"   
