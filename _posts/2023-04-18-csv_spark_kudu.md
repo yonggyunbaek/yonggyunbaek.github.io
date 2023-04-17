@@ -1,5 +1,5 @@
 ---
-title: "csv파일 spark이용해서 kudu저장하기"
+title: "csv파일 spark이용해서 kudu저장"
 excerpt: ""
 
 categories: [cloudera]
