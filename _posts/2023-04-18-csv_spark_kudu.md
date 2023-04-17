@@ -1,6 +1,6 @@
 ---
 title: "csv파일 spark이용해서 kudu저장"
-excerpt: ""
+excerpt: "csvsparkkdudu"
 
 categories: [cloudera]
 tag: [spark, kudu]
@@ -8,8 +8,8 @@ tag: [spark, kudu]
 toc: true
 toc_sticky: true
 
-date: 2023-04-05
-last_modifed_at: 2023-04-05
+date: 2023-04-18
+last_modifed_at: 2023-04-18
 ---
 
 # csv --> spark --> kudu
