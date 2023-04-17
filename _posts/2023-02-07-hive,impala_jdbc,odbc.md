@@ -22,7 +22,7 @@ last_modifed_at: 2023-02-07
 
 * hive, impala 서비스 ldap 설정 상태
 
-### 1) JDBC
+### 1) Impala JDBC
 * * *
 ```
 pip3 install JayDebeAPI
@@ -32,7 +32,6 @@ pip3 install JayDebeAPI
 ```python
 import jaydebeapi
 
-import jaydebeapi
 conn = jaydebeapi.connect("com.cloudera.impala.jdbc41.DataSource",
                           "jdbc:impala://<hostname>:21050/;AuthMech=3;",
                           {'UID': "<user>", 'PWD': "<passwd>"},
@@ -46,6 +45,20 @@ curs.close()
 conn.close()​
 ```
 
+```python
+​import jaydebeapi
+
+conn = jaydebeapi.connect("com.cloudera.hive.jdbc.HS2DataSource","jdbc:hive2://<host>:10000/;AuthMech=3",{'UID':"<user>", 'PWD':"<passwd>"},'/root/HiveJDBC-2.6.21.1025/HiveJDBC41.jar')
+
+
+# /root/HiveJDBC-2.6.21.1025
+crsr=conn.cursor()
+#crsr.execute('select * from test01.hive_exteral_test_01;')
+crsr.execute('show databases;')
+
+print(crsr.fetchall())
+
+```
 
 ### 2) ODBC
 * ODBC 설치
