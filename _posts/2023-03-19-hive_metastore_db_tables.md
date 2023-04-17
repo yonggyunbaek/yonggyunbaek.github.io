@@ -33,4 +33,3 @@ vi hive_tables.sql
 msck repair table default.customers drop partitions;
 msck repair table default.customers_2 drop partitions;
 ```
-
