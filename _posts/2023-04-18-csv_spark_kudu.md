@@ -18,12 +18,11 @@ last_modifed_at: 2023-04-18
 
 
 ```txt
-/* kudutest.csv
+kudutest.csv
 A,B,NUM,DT
 a,b,1,2023-02-27 14:52:06
 c,d,2,2023-02-27 15:00:00
 e,f,3,2023-02-27 16:00:00
-*/
 ```
 
 ```shell
